@@ -10,8 +10,8 @@ python-multipart==0.0.9
 # ============================================
 sqlalchemy==2.0.35
 asyncpg==0.30.0
-alembic==1.14.0
 psycopg2-binary==2.9.10
+greenlet==3.1.1
 
 # ============================================
 # WEBSOCKETS
@@ -47,15 +47,3 @@ requests==2.32.3
 # ASYNC FILE HANDLING
 # ============================================
 aiofiles==24.1.0
-
-# ============================================
-# TESTING (OPTIONAL - Remove in production)
-# ============================================
-pytest==8.3.4
-pytest-asyncio==0.24.0
-
-# ============================================
-# CODE QUALITY (OPTIONAL - Remove in production)
-# ============================================
-black==24.10.0
-flake8==7.1.1
