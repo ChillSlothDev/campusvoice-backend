@@ -171,8 +171,8 @@ async def init_db():
     try:
         logger.info("📊 Initializing database tables...")
         
-        # Import models to register them with Base
-        from models_db import Base, Student, Complaint, Vote, StatusUpdate, Meta
+        # ✅ CORRECT: Import models with DB suffix
+        from models_db import Base, StudentDB, ComplaintDB, VoteDB, StatusUpdateDB, MetaDB
         
         async with engine.begin() as conn:
             # Create all tables defined in Base.metadata
